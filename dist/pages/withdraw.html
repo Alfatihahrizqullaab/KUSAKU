@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico " type="image/x-icon">
+    <title>Withdraw</title>
+</head>
+<body>
+    <div class="flex min-h-dvh flex-col items-center bg-green-50 justify-start gap-4 p-4">
+        <!-- appbar -->
+        <div class="fixed left-0 top-0 z-10 w-full flex items-center gap-5 bg-white p-4 text-gray-900">
+            <a href="#" class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 " onclick="history.back()">
+                <span class="i-material-symbols-arrow-left-alt-rounded text-icon-md block"></span>
+            </a>
+            <p class="text-lg font-semibold ">Buat Penarikan Saldo</p>
+        </div>
+        <!-- /appbar -->
+        <div class="w-full max-w-[768px] pb-[80px]">
+            <div class="mt-[92px] flex w-full flex-col gap-8 p-4">
+                <!-- Card Informasi -->
+                    <form action="#" method="post" class="flex flex-col gap-4 rounded-[20px] bg-white p-2.5 shadow-md">
+                        <!-- Input Nama -->
+                        <div>
+                            <label for="input-nominal" class="text-sm ps-4 font-medium uppercase text-gray-900 ">nominal</label>
+                                <div class="relative">
+                                    <input id="input-nominal" type="number" inputmode="numeric" class="w-full peer rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:text-red-900 invalid:bg-red-200 invalid:caret-red-900 focus:invalid:ring-red-900 disabled:bg-gray-100 disabled:border-grey-300" placeholder="Tersedia 20.000.000,00">
+                                        <div class="absolute  inset-y-0 start-0 text-icon-md flex items-center ps-3 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900">
+                                            <span class="i-material-symbols-account-balance-wallet-sharp "></span>
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                        <!-- /input Nama -->
+                        <!-- Input Email -->
+                        <div>
+                            <label for="input-pin" class="text-sm ps-4 font-medium uppercase text-gray-900 ">pin</label>
+                                <div class="relative">
+                                    <input id="input-pin`" type="number" inputmode="numeric" class="w-full peer rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-400 invalid:text-red-900 invalid:bg-red-200 invalid:caret-red-900 focus:invalid:ring-red-900 disabled:bg-gray-100 disabled:border-grey-300" placeholder="Masukkan 6 digit PIN">
+                                        <div class="absolute  inset-y-0 start-0 text-icon-md flex items-center ps-3 text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900">
+                                            <span class="i-material-symbols-security-rounded "></span>
+                                        </div>
+                                    
+                                </div>
+                            
+                        </div>
+                        <!-- /input Email -->
+
+                        <!-- Button -->
+                        <button type="button" class="flex justify-center bg-brands-light-green text-white items-center rounded-xl p-2.5 uppercase gap-2 text-sm font-semibold hover:bg-brands-dark-green focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-gray-400">
+                            <span class="i-material-symbols-save-rounded text-icon-md"></span>
+                            <span>Proses Permintaan</span>
+                        </button>
+                        <!-- /Button -->
+
+                        <!-- Help Text -->
+                        <p class="mt-3 text-center text-xs text-neutral-400">
+                            Proses pencairan maks 2 hari kerja.
+                            <br>  
+                            <a href="#" class="text-xs font-semibold text-brands-light-green hover:text-brands-light-green/70 focus:outline-none focus:ring-2 focus:ring-green-400 ">Hubungi pusat bantuan</a>
+                            jika ada kendala
+                        </p>
+                        <!-- /help text -->
+                        
+                    </form>
+                <!-- /Card Informasiii -->
+            </div>
+        </div>
+
+
+        <!-- Navbar -->
+            <div class="fixed bottom-0 w-full flex bg-white justify-evenly shadow-md">
+                <a href="#" class="w-full group flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-900 hover:bg-gray-50 p-3">
+                    <span class="i-material-symbols-home-outline-rounded text-icon-md inline group-hover:hidden"></span>
+                    <span class="i-material-symbols-home-rounded text-icon-md hidden group-hover:inline"></span>
+                    <span class="text-xs font-semibold">Beranda</span>
+                </a>
+                <a href="#" class="w-full group flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-900 hover:bg-gray-50 p-3">
+                    <span class="i-material-symbols-receipt-outline-rounded text-icon-md inline group-hover:hidden"></span>
+                    <span class="i-material-symbols-receipt-rounded text-icon-md hidden group-hover:inline"></span>
+                    <span class="text-xs font-semibold">Riwayat</span>
+                </a>
+                <a href="#" class="w-full group flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-900 hover:bg-gray-50 p-3">
+                    <span class="i-material-symbols-person-outline-rounded text-icon-md inline group-hover:hidden"></span>
+                    <span class="i-material-symbols-person-rounded text-icon-md hidden group-hover:inline"></span>
+                    <span class="text-xs font-semibold">Akun</span>
+                </a>
+            </div>
+        <!-- /Navbar -->
+    </div>
+</body>
+</html>

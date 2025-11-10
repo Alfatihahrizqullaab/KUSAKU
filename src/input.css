@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@plugin "./icons.mjs";
+
+@theme {
+  /* Container settings */
+  --container-max-width: 1280px;
+  --container-padding: 1rem;
+
+  /* Fonts */
+  --font-sans: Inter, sans-serif;
+  --font-brand: "Red Rose", sans-serif;
+
+  /* Font Size */
+  --text-icon-sm: 20px;
+  --text-icon-md: 24px;
+  --text-icon-lg: 28px;
+  --text-icon-xl: 32px;
+
+  /* Colors */
+  --color-brands-dark-green: #118871;
+  --color-brands-light-green: #15ab8e;
+}
+
+/* === THEME EXTENSIONS === */
+@custom-theme {
+  /* Container utility */
+  .container {
+    margin-inline: auto;
+    max-width: var(--container-max-width);
+    padding-inline: var(--container-padding);
+  }
+
+  /* Animations */
+  @keyframes slide-top {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  /* Animation utilities */
+  --animate-slide-top: slide-top 0.5s cubic-bezier(.57,.14,0,1.07) both;
+  --animate-slide-bottom: slide-bottom 1s cubic-bezier(.57,.14,0,1.07) both;
+
+  
+}
